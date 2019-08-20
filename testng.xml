@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Simple Logger Suite"> -->
+<suite name="Simple Reporter Suite">
+
+	<!-- <listeners> -->
+	<!-- <listener class-name="test.CustomListener" /> -->
+	<!-- </listeners> -->
+	<listeners>
+		<listener class-name="test.CustomReporter" />
+	</listeners>
+
+	<test name="Simple Logger test">
+		<classes>
+			<class name="test.SampleTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
